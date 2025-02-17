@@ -84,6 +84,39 @@ div#container {
                 float: right;
                 background-color: white;
                 padding: 10px;
+                h2 {
+                    color: darkolivegreen;
+                    border-bottom: 2px dotted red;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                }
+
+                p{
+                    font-size: 12px;
+
+                    span {
+                        font-weight: bold;
+                        font-size: 110%;
+                    }
+
+                    &.learn-more {
+                        text-align: right;
+
+                        a {
+                            color: red;
+                            text-transform: uppercase;
+                            text-decoration: none;
+
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.clear-float {
+                clear: both;
             }
         }
     }
